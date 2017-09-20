@@ -2,7 +2,7 @@
 function destroyer(arr /*, arg2, ... */) {
   //create array from arguments skipping first
   var args = Array.from(arguments).slice(1);
-  //loop through argArr and filter out results from arr
+  //loop through args and filter out results from arr
   for (var j = 0; j < args.length; j++) {
     arr = arr.filter(function(val){
       return val !== args[j];
